@@ -109,7 +109,6 @@ void paquete(int conexion)
 	leido = readline("> ");
 	while (*leido != '\0')
 	{
-		log_info(logger, leido);
 		agregar_a_paquete(paquete, leido, sizeof(leido));
 
 		free(leido);
